@@ -27,7 +27,14 @@
                 app:clickAction="toggle"
         />
 
-        <!-- TODO: Add KeyFrameSet and KeyPosition -->
+        <KeyFrameSet>
+            <KeyPosition
+                app:motionTarget="@id/moon"
+                app:keyPositionType="parentRelative"
+                app:framePosition="50"
+                app:percentY="0.5"
+                app:curveFit="spline"/>
+        </KeyFrameSet>
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
